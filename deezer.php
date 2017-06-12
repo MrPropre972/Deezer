@@ -4,51 +4,51 @@
 
 $group1=[
     'name' => 'Louise Attaque',
-    'fans'=> '336014',
-    'active' => 'true',
-    'members' => 'Gaëtan Roussel, Arnaud Samuel, Robin Feix, Alexandre Margraff'
+    'fans'=> 336014,
+    'active' => true,
+    'members' => 'Gaëtan Roussel, Arnaud Samuel, Robin Feix, Alexandre Margraff',
 ];
-$coldplay=[
+$group2=[
     'name' => 'Coldplay',
-    'fans'=> '11343676',
-    'active' => 'true',
-    'members' => 'Chris Martin, Guy Berryman, Jon Buckland, Will Champion'
+    'fans'=> 11343676,
+    'active' => true,
+    'members' => 'Chris Martin, Guy Berryman, Jon Buckland, Will Champion',
 ];
 $group2=[
     'name' => 'U2',
-    'fans'=> '3776210',
-    'active' => 'true',
-    'members' => 'Bono, The Edge, Adam Clayton, Larry Mullen Junior, Ivan McCormick, Peter Martin, Dik Evans'
+    'fans'=> 3776210,
+    'active' => true,
+    'members' => 'Bono, The Edge, Adam Clayton, Larry Mullen Junior, Ivan McCormick, Peter Martin, Dik Evans',
 ];
 $group3=[
     'name' => 'Queen',
-    'fans'=> '5531303',
-    'active' => 'false',
-    'members' => 'Freddie Mercury, Brian May, Roger Taylor, John Deacon, Mike Grose, Spike Edney, Doug Bogie, Barry Mitchell'
+    'fans'=> 5531303,
+    'active' => false,
+    'members' => 'Freddie Mercury, Brian May, Roger Taylor, John Deacon, Mike Grose, Spike Edney, Doug Bogie, Barry Mitchell',
 ];
 $group4=[
     'name' => 'The Beatles',
-    'fans'=> '3412906',
-    'active' => 'false',
-    'members' => 'John Lennon, Paul McCartney, George Harrison, Ringo Starr'
+    'fans'=> 3412906,
+    'active' => false,
+    'members' => 'John Lennon, Paul McCartney, George Harrison, Ringo Starr',
 ];
 $group5=[
     'name' => 'The Rolling Stones',
-    'fans'=> '3977329',
-    'active' => 'true',
-    'members' => 'Mick Jagger, Keith Richards, Ron Wood, Charlie Watts'
+    'fans'=> 3977329,
+    'active' => true,
+    'members' => 'Mick Jagger, Keith Richards, Ron Wood, Charlie Watts',
 ];
 $group6=[
     'name' => 'Nirvana',
-    'fans'=> '6226653',
-    'active' => 'false',
-    'members' => 'Kurt Cobain, Dave Grohl, Krist Novoselic, Pat Smear'
+    'fans'=> 6226653,
+    'active' => false,
+    'members' => 'Kurt Cobain, Dave Grohl, Krist Novoselic, Pat Smear',
 ];
 $group7=[
     'name' => 'Pink Floyd',
-    'fans'=> '3507791',
-    'active' => 'false',
-    'members' => 'David Gilmour, Roger Waters, Syd Barrett, Richard Wright, Nick Mason'
+    'fans'=> 3507791,
+    'active' => false,
+    'members' => 'David Gilmour, Roger Waters, Syd Barrett, Richard Wright, Nick Mason',
 ];
 
 // COMMENTAIRES
@@ -137,40 +137,35 @@ $comment12=[
         <title>Deezer Rock</title>
     </head>
     <body>
+    
         <h1>Challenge Deezer Rock</h1>
         <hr/>
-        <table>
-            <td>
-                <tr><td><?php echo $group1['name'] ?></td></tr>
-                <tr><td><?php echo $group1['fans'] ?></td></tr>
-                <tr><td>Members</td></tr>
+        <table border="1">
+                <tr><th><?php echo $group1['name'] ?></th></tr>
+                <tr><td><?php echo number_format($group1['fans'],0, '.',' ') ?></td></tr>
+                <tr><td><em>Members</em></td></tr>
                 <tr><td><?php echo $group1['members'] ?></td></tr>
-            </td>
-        </table>
+                    </table>
         <hr/>
                 <li><?php echo $comment1['pseudo']. ' : '. $comment1['comment'] ?></li>
                 <li><?php echo $comment3['pseudo']. ' : '. $comment3['comment'] ?></li>
         <hr/>
         <hr/>
-        <table>
-            <td>
-                <tr><td><?php echo $group2['name'] ?></td></tr>
-                <tr><td><?php echo $group2['fans'] ?></td></tr>
-                <tr><td>Members</td></tr>
+        <table border="1">
+                <tr><th><?php echo $group2['name'] ?></th></tr>
+                <tr><td><?php echo number_format($group2['fans'],0, '.',' ') ?></td></tr>
+                <tr><td><em>Members</em></td></tr>
                 <tr><td><?php echo $group2['members'] ?></td></tr>
-            </td>
         </table>
         <hr/>
                 <li><?php echo $comment2['pseudo']. ' : '. $comment2['comment'] ?></li>
         <hr/>
         <hr/>
-        <table>
-            <td>
-                <tr><td><?php echo $group3['name'] ?></td></tr>
-                <tr><td><?php echo $group3['fans'] ?></td></tr>
-                <tr><td>Members</td></tr>
+        <table border="1">
+                <tr><th><del><?php echo $group3['name'] ?></del></th></tr>
+                <tr><td><?php echo number_format($group3['fans'],0, '.',' ') ?></td></tr>
+                <tr><td><em>Members</em></td></tr>
                 <tr><td><?php echo $group3['members'] ?></td></tr>
-            </td>
         </table>
         <hr/>
                 <li><?php echo $comment4['pseudo']. ' : '. $comment4['comment'] ?></li>
@@ -181,49 +176,41 @@ $comment12=[
                 <li><?php echo $comment12['pseudo']. ' : '. $comment12['comment'] ?></li>
         <hr/>
         <hr/>
-        <table>
-            <td>
-                <tr><td><?php echo $group4['name'] ?></td></tr>
-                <tr><td><?php echo $group4['fans'] ?></td></tr>
-                <tr><td>Members</td></tr>
+        <table border="1">
+                <tr><th><del><?php echo $group4['name'] ?></del></th></tr>
+                <tr><td><?php echo number_format($group4['fans'],0, '.',' ') ?></td></tr>
+                <tr><td><em>Members</em></td></tr>
                 <tr><td><?php echo $group4['members'] ?></td></tr>
-            </td>
         </table>
         <hr/>
                 <li><?php echo $comment11['pseudo']. ' : '. $comment11['comment'] ?></li>
         <hr/>
         <hr/>
-        <table>
-            <td>
-                <tr><td><?php echo $group5['name'] ?></td></tr>
-                <tr><td><?php echo $group5['fans'] ?></td></tr>
-                <tr><td>Members</td></tr>
+        <table border="1">
+                <tr><th><?php echo $group5['name'] ?></th></tr>
+                <tr><td><?php echo number_format($group5['fans'],0, '.',' ') ?></td></tr>
+                <tr><td><em>Members</em></td></tr>
                 <tr><td><?php echo $group5['members'] ?></td></tr>
-            </td>
         </table>
         <hr/>
                 <li><?php echo $comment10['pseudo']. ' : '. $comment10['comment'] ?></li>
         <hr/>
         <hr/>
-        <table>
-            <td>
-                <tr><td><?php echo $group6['name'] ?></td></tr>
-                <tr><td><?php echo $group6['fans'] ?></td></tr>
-                <tr><td>Members</td></tr>
+        <table border="1">
+                <tr><th><del><?php echo $group6['name'] ?></del></th></tr>
+                <tr><td><?php echo number_format($group6['fans'],0, '.',' ') ?></td></tr>
+                <tr><td><em>Members</em></td></tr>
                 <tr><td><?php echo $group6['members'] ?></td></tr>
-            </td>
         </table>
         <hr/>
                 <li><?php echo $comment7['pseudo']. ' : '. $comment7['comment'] ?></li>
         <hr/>
         <hr/>
-        <table>
-            <td>
-                <tr><td><?php echo $group7['name'] ?></td></tr>
-                <tr><td><?php echo $group7['fans'] ?></td></tr>
-                <tr><td>Members</td></tr>
+        <table border="1">
+                <tr><th><del><?php echo $group7['name'] ?></del></th></tr>
+                <tr><td><?php echo number_format($group7['fans'],0, '.',' ') ?></td></tr>
+                <tr><td><em>Members</em></td></tr>
                 <tr><td><?php echo $group7['members'] ?></td></tr>
-            </td>
         </table>
         <hr/>
                 <li><?php echo $comment3['pseudo']. ' : '. $comment3['comment'] ?></li>
